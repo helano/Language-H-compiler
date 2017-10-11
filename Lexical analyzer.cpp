@@ -167,7 +167,7 @@ void print_value (int i){
 		    printf("variable\n");
 		    break;
 		case 4: 
-			printf("Relational Operator : atribuicao\n");
+			printf("Relational Operator : ASSIGNMENT\n");
 			break;
 		case 5:
 			printf("Relational Operator : MAJOR\n");
