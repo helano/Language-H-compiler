@@ -19,7 +19,24 @@ int ler_codigo(char string[]){
         
         
         
+      if (string[i]=='o'){
+			if(string[i+1]=='r'){
+				return 16;
+			}      	
+	  }else{
+	 
         
+        if (string[i]=='a'){
+			
+			if (string[i+1]=='n'){
+				if(string[i+2]=='d'){
+					return 15;
+				}
+			}	
+				
+
+		}else{
+		
         
         
         if (length <=2){
@@ -34,6 +51,19 @@ int ler_codigo(char string[]){
 				if(string[i]=='<'){
 					return 6;	
 				}
+				if(string[i]=='+'){
+					return 11;
+				}
+				if (string[i]=='-'){
+					return 12;
+				}
+				if(string[i]=='*'){
+					return 13;
+				}
+				if(string[i]=='/'){
+					return 14;
+				}
+				
 				return -1;
 			}else {
 				 	if (string[i]=='='){
@@ -69,7 +99,7 @@ int ler_codigo(char string[]){
 					
 				
 			}
-			
+	
 			
 		}
 		
@@ -138,10 +168,11 @@ int ler_codigo(char string[]){
 						   }
 				
 					 } 
-					 
+			
 			
         	}
-        
+    }
+}
         
 
         
@@ -186,7 +217,25 @@ void print_value (int i){
 			break;
 		case 10:
 			printf("Relational Operator : MINOR OR IQUAL\n");
-			break;							
+			break;	
+		case 11:
+			printf("Math Operator : PLUS\n");
+			break;	
+		case 12:
+			printf("Math Operator : SUBTRACTION \n");
+			break;	
+		case 13:
+			printf("Math Operator : MULTIPLICATION\n");
+			break;	
+		case 14:
+			printf("Math Operator : DIVISION\n");
+			break;
+		case 15:
+			printf("Logic Operator : AND\n");
+			break;
+		case 16:
+			printf("Logic Operator : OR\n");
+			break;												
 		default: 
 			printf("can not indentify\n");
 			break;
