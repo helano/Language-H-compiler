@@ -206,6 +206,7 @@ int main(){
 	
 
 
+while (true){
 
 
 	printf("-------------------Lexical Analises : Language H------------------------\n");
@@ -220,7 +221,7 @@ int main(){
     		word = strtok(NULL, " ");
     		
 		}
-		
+}
 	
 	
         
